@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+
+:root {
+  --bg: #050505;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #020617;
+  color: white;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* background glow */
+
+.glow1,
+.glow2 {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  filter: blur(140px);
+  z-index: -1;
+}
+
+.glow1 {
+  background: #00aaff;
+  top: 10%;
+  left: 20%;
+  opacity: 0.3;
+}
+
+.glow2 {
+  background: #ff00aa;
+  bottom: 10%;
+  right: 20%;
+  opacity: 0.3;
+}
